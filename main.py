@@ -18,10 +18,10 @@ selected_stock = st.selectbox("Select dataset for prediction",stocks)
 n_years = st.slider("Years of prediction",1,5)
 period = n_years*365
 
-@st.cache
+
 def load_data(ticker):
     data = yf.download(ticker,START,TODAY)
-    data.reset_index(inplace=True) # data in first column
+    data.reset_index(inplace=True) # date in first column
     return data
 
 data_load_state = st.text("Load data...")
