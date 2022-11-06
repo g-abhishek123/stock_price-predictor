@@ -1,7 +1,7 @@
 import prophet as prophet
 import streamlit as st # creates a web app
 from datetime import date
-import yfinancstreamlit run main.pye as yf    # to download stock data
+import yfinance as yf    # to download stock data
 import fbprophet as Prophet    # for forecasting algorithm made by fb
 from fbprophet.plot import plot_plotly  # to plot nice/interactive graphs
 from plotly import graph_objs as go
