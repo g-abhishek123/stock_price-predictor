@@ -41,7 +41,7 @@ plot_raw_data()
 
 # Forecasting
 df_train = data[['Date', 'Close']]
-df_train = data.rename(columns={"Date":"ds","Close":"y"})
+df_train = df_train.rename(columns={"Date":"ds","Close":"y"})
 
 m = Prophet() # m for model
 m.fit(df_train)
