@@ -1,0 +1,2 @@
+type streamlit run main.py on terminal after installing all the required modules.
+It will run open the web page!
